@@ -144,19 +144,32 @@
         </div>
     </div>
 </section>
-
+    
 <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="grid">
-        <div class="card">
-            <img src="Claybunny.png">
-        </div>
-        <div class="card">
-            <img src="Claygoat.png">
-        </div>
-        <div class="card">
-            <img src="Clayhedgehog.png">
-        </div>
+    <h2 style="text-align:center;">Gallery</h2>
+
+    <div style="position: relative; max-width: 500px; margin: auto;">
+
+        <!-- Images -->
+        <img id="gallery-img" src="Claybunny.png" 
+             style="width:100%; border-radius:15px;">
+
+        <!-- Left arrow -->
+        <button onclick="prevImage()" 
+            style="position:absolute; top:50%; left:10px; transform:translateY(-50%);
+                   background:#ff9fb2; border:none; color:white; padding:10px;
+                   border-radius:50%; cursor:pointer;">
+            ←
+        </button>
+
+        <!-- Right arrow -->
+        <button onclick="nextImage()" 
+            style="position:absolute; top:50%; right:10px; transform:translateY(-50%);
+                   background:#ff9fb2; border:none; color:white; padding:10px;
+                   border-radius:50%; cursor:pointer;">
+            →
+        </button>
+
     </div>
 </section>
 
