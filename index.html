@@ -144,6 +144,29 @@
         </div>
     </div>
 </section>
+<script>
+const images = [
+    "Claybunny.png",
+    "Claygoat.png",
+    "Clayhedgehog.png"
+];
+
+let currentIndex = 0;
+
+function showImage() {
+    document.getElementById("gallery-img").src = images[currentIndex];
+}
+
+function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage();
+}
+
+function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage();
+}
+</script>
     
 <section id="gallery">
     <h2 style="text-align:center;">Gallery</h2>
